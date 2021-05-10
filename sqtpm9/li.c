@@ -8,8 +8,6 @@ li* li_alloc() {
   return calloc(1,sizeof(li));
 }
 
-
-
 void li_free(li* L) {
 
   node* p = L->head;
@@ -24,8 +22,6 @@ void li_free(li* L) {
   free(L);
 }
 
-
-
 int li_insert(li* L, int data) {
 
   node* n = malloc(sizeof(node));
@@ -38,8 +34,6 @@ int li_insert(li* L, int data) {
 
   return 1;
 }
-
-
 
 void li_print(li* L) {
 
